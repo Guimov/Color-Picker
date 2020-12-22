@@ -93,8 +93,8 @@ while 1:
 				paste_mode = True
 				COLOR = screen.get_at(ev.pos)
 			if current_color_rect.collidepoint(ev.pos):
-					paste_mode = False
-					COLOR = (0, 0, 0, 255)
+				paste_mode = False
+				COLOR = (0, 0, 0, 255)
 			for i in range(len(square_list)):
 				if square_list[i].collidepoint(ev.pos):
 					if paste_mode:	
